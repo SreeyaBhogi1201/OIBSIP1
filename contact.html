@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="CSS/contact.css">
+<title>Art Aesthete</title>
+<script>
+  window.addEventListener('scroll', function() {
+  var navbar = document.querySelector('.navbar');
+  if (window.scrollY > 100) { 
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+});
+</script>
+</head>
+<body>
+
+  <header>
+    <div class="navbar">
+      <div class="logo"><img src="Img/LOGO.png"></div>
+      <div style="color: white;">Art Aesthete</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="artsignup.html">SignUp/Login</a>
+      </div>
+      <div class="search-bar">
+        <input id="searchInput" type="search" placeholder="Search..." oninput="search()">
+      </div>
+      <div class="bag-icon">
+        <img src="/Img/cart.jpeg" alt="Bag Icon">
+        <span class="bag-count">0</span>
+      </div>
+    </div>
+</header>
+
+<div class="hero">
+  <h1 style="padding-top: 80px;">Contact Us</h1><br>
+</div>
+
+<div class="top">
+  <p>Hours & Bookings</p>
+</div>
+
+<div class="content">
+    <p>Monday to Friday 9AM–6PM<br>
+
+    Saturday 9AM–4PM<br>
+    
+    Sunday Closed</p>
+</div>
+<hr>
+<div class="grid-gallery">
+    <div class="grid-item">
+      <img src="Img/Pinterest.png" alt="Polaroid Art">
+      <p class="grid-caption">Polaroid Art</p>
+    </div>
+    <p class="left">Connect with Us:<br>
+        Pinterest: artaesthete__ <br>
+        
+        Instagram: @art.aesthete__<br>
+        
+        Email: art.aesthetess@gmail.com<br>
+        
+        Link Tree: @art.aesthete__</p><br>
+    </div>
+<footer class="footer">
+  <p>Call or email to Order : 555-555-5555 or <a href="mailto:art.aesthetess@gmail.com ">art.aesthetess@gmail.com </a>  </p>
+</footer>
+</body>
+</html>

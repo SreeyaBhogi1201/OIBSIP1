@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="CSS/portfolio.css">
+<title>Art Aesthete</title>
+<script>
+  window.addEventListener('scroll', function() {
+  var navbar = document.querySelector('.navbar');
+  if (window.scrollY > 50) { 
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+});
+</script>
+</head>
+<body>
+
+  <header>
+    <div class="navbar">
+      <div class="logo"><img src="Img/LOGO.png"></div>
+      <div style="color: white;">Art Aesthete</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="artsignup.html">SignUp/Login</a>
+      </div>
+      <div class="search-bar">
+        <input id="searchInput" type="search" placeholder="Search..." oninput="search()">
+      </div>
+      <div class="bag-icon">
+        <img src="/Img/cart.jpeg" alt="Bag Icon">
+        <span class="bag-count">0</span>
+      </div>
+    </div>
+</header>
+
+<div class="hero">
+  <h1 style="padding-top: 70px;">Portfolio</h1><br>
+</div>
+
+
+  <div class="grid-gallery">
+    <!-- First set of grid items -->
+    <!-- Repeat this set 11 times -->
+    <div class="grid-item">
+      <div class="aspect-ratio-container">
+        <img src="Img/wallet card.jpg" alt="Polaroid Art">
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="aspect-ratio-container">
+        <img src="Img/rakhi card.jpg" alt="Greeting Cards">
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="aspect-ratio-container">
+        <img src="Img/package4.jpg" alt="Art Illustrations">
+      </div>
+  </div>
+    <div class="grid-item">
+      <div class="aspect-ratio-container">
+        <img src="Img/package3.jpg" alt="Wallet Cards">
+      </div>
+    </div>
+
+    <!-- 2nd row -->
+
+    <div class="grid-item">
+      <div class="aspect-ratio-container">
+        <img src="Img/brown_mountains.jpg" alt="Polaroid Art">
+      </div>
+  </div>
+  <div class="grid-item">
+    <div class="aspect-ratio-container">
+      <img src="Img/friends.jpg" alt="Art Illustrations">
+    </div>
+  </div>
+  <div class="grid-item">
+    <div class="aspect-ratio-container">
+      <img src="Img/package1.jpg" alt="Greeting Cards">
+    </div>
+  </div>
+  <div class="grid-item">
+    <div class="aspect-ratio-container">
+      <img src="Img/her.jpg" alt="Wallet Cards"> 
+    </div>
+  </div>
+   <!-- 3rd row -->
+  <div class="grid-item">
+    <div class="aspect-ratio-container">
+      <img src="Img/FlowerManadala.jpg" alt="Polaroid Art"> 
+    </div>  
+</div>
+<div class="grid-item">
+  <div class="aspect-ratio-container">
+    <img src="Img/Modernart.jpg" alt="Art Illustrations">  
+  </div>
+</div>
+<div class="grid-item">
+  <div class="aspect-ratio-container">
+    <img src="Img/HoneyBeeMandala.jpg" alt="Greeting Cards">
+  </div>
+</div>
+<div class="grid-item">
+  <div class="aspect-ratio-container">
+    <img src="Img/Wedding_GreetingCard1.jpg" alt="Wallet Cards">
+  </div>
+</div>
+
+<!-- 4th row -->
+<div class="grid-item">
+  <div class="aspect-ratio-container">
+    <img src="Img/ColourfulEffiel.jpg" alt="Polaroid Art">
+  </div>
+</div>
+<div class="grid-item">
+  <div class="aspect-ratio-container">
+    <img src="Img/ColourfulEffiel.jpg" alt="Art Illustrations">
+  </div>
+</div>
+<div class="grid-item">
+  <div class="aspect-ratio-container">
+    <img src="Img/Girl_WreathPainting.jpg" alt="Greeting Cards">
+  </div>
+</div>
+<div class="grid-item">
+  <div class="aspect-ratio-container">
+    <img src="Img/GreenLeaves.jpg" alt="Wallet Cards">
+  </div>
+</div>
+
+<!-- 5th row -->
+<div class="grid-item">
+  <div class="aspect-ratio-container">
+    <img src="Img/Wedding_GreetingCardEnvelope.jpg" alt="Polaroid Art">
+  </div>
+</div>
+<div class="grid-item">
+  <div class="aspect-ratio-container">
+    <img src="Img/Lolo_GreetingCard.jpg" alt="Art Illustrations">
+  </div>
+</div>
+<div class="grid-item">
+  <div class="aspect-ratio-container">
+    <img src="Img/order2.png" alt="Greeting Cards">
+  </div>
+</div>
+<div class="grid-item">
+  <div class="aspect-ratio-container">
+    <img src="Img/concu.jpg" alt="Wallet Cards">
+  </div>
+</div>
+
+<!-- 6th row -->
+<div class="grid-item">
+  <div class="aspect-ratio-container">
+    <img src="Img/purpleflower.png" alt="Polaroid Art">
+  </div>
+</div>
+<div class="grid-item">
+  <div class="aspect-ratio-container">
+    <img src="Img/Girl_WreathPainting.jpg" alt="Art Illustrations">
+  </div>
+</div>
+<div class="grid-item">
+  <div class="aspect-ratio-container">
+    <img src="Img/Modern_Art_Girl.jpg" alt="Greeting Cards">
+  </div>
+</div>
+<div class="grid-item">
+  <div class="aspect-ratio-container">
+    <img src="Img/jeans.jpg" alt="Wallet Cards">
+  </div>
+</div>
+
+<!-- 7th row -->
+<div class="grid-item">
+  <div class="aspect-ratio-container">
+    <img src="Img/rainbowrock.jpg" alt="Polaroid Art">
+  </div>
+</div>
+<div class="grid-item">
+  <div class="aspect-ratio-container">
+    <img src="Img/beachrock.jpg" alt="Art Illustrations">
+  </div>
+</div>
+<div class="grid-item">
+  <div class="aspect-ratio-container">
+    <img src="Img/cactusrock.jpg" alt="Greeting Cards">
+  </div>
+</div>
+<div class="grid-item">
+  <div class="aspect-ratio-container">
+    <img src="Img/smallpainting.jpg" alt="Wallet Cards">
+  </div>
+</div>
+<!-- 8th row -->
+<div class="grid-item">
+  <div class="aspect-ratio-container">
+    <img src="Img/firstorder.jpg" alt="Polaroid Art">
+  </div>
+</div>
+<div class="grid-item">
+  <div class="aspect-ratio-container">
+    <img src="Img/sunflower mandala.jpg" alt="Art Illustrations">
+  </div>
+</div>
+<div class="grid-item">
+  <div class="aspect-ratio-container">
+    <img src="Img/pineapple.jpg" alt="Greeting Cards">
+  </div>
+</div>
+<div class="grid-item">
+  <div class="aspect-ratio-container">
+    <img src="Img/dreamcatcher.jpg" alt="Wallet Cards">
+  </div>
+</div>
+  <!-- 9th row -->
+<div class="grid-item">
+  <div class="aspect-ratio-container">
+    <img src="Img/favicon.jpg" alt="Polaroid Art">
+  </div>
+</div>
+<div class="grid-item">
+  <div class="aspect-ratio-container">
+    <img src="Img/purplepainting.jpg" alt="Art Illustrations">
+  </div>
+</div>
+<div class="grid-item">
+  <div class="aspect-ratio-container">
+    <img src="Img/ladyorange.jpg" alt="Greeting Cards">
+  </div>
+</div>
+<div class="grid-item">
+  <div class="aspect-ratio-container">
+    <img src="Img/wallet card.jpg" alt="Wallet Cards">
+  </div>
+</div>
+  <!-- 10th row -->
+<div class="grid-item">
+  <div class="aspect-ratio-container">
+    <img src="Img/pencilsketch.jpg" alt="Polaroid Art">
+  </div>
+</div>
+<div class="grid-item">
+  <div class="aspect-ratio-container">
+    <img src="Img/friends.jpg" alt="Art Illustrations">
+  </div>
+</div>
+<div class="grid-item">
+  <div class="aspect-ratio-container">
+    <img src="Img/outfit.jpg" alt="Greeting Cards">
+  </div>
+</div>
+<div class="grid-item">
+  <div class="aspect-ratio-container">
+    <img src="Img/eye1.jpg" alt="Wallet Cards">
+  </div>
+</div>
+  <!-- 11th row -->
+<div class="grid-item">
+  <div class="aspect-ratio-container">
+    <img src="Img/colonial_structure.jpg" alt="Polaroid Art">
+  </div>
+</div>
+<div class="grid-item">
+  <div class="aspect-ratio-container">
+    <img src="Img/eye2.jpg" alt="Art Illustrations">
+  </div>
+</div>
+<div class="grid-item">
+  <div class="aspect-ratio-container">
+    <img src="Img/clouds_canvas.jpg" alt="Greeting Cards">
+  </div>
+</div>
+<div class="grid-item">
+  <div class="aspect-ratio-container">
+    <img src="Img/HalfFlower_blacksketch.jpg" alt="Wallet Cards">
+  </div>
+</div>
+</div>
+<footer class="footer">
+  <p>Call or email to Order : 555-555-5555 or <a href="mailto:art.aesthetess@gmail.com ">art.aesthetess@gmail.com </a>  </p>
+</footer>
+</body>
+</html>

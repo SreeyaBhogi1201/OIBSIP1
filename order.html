@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="/CSS/order.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo"><img src="Img/LOGO.png" alt="Logo"></div>
+      <div style="color: white;">Art Aesthete</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="artsignup.html">SignUp/Login</a>
+      </div>
+      <div class="search-bar">
+        <input id="searchInput" type="search" placeholder="Search..." oninput="handleSearch()">
+      </div>
+      <div class="bag-icon">
+        <img src="/Img/cart.jpeg" alt="Bag Icon">
+        <span class="bag-count">0</span>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="wallet-cards" class="menu-section">
+      <h2>Wallet Cards</h2>
+      <div class="menu-items-container" id="wallet-cards-menu-items"></div>
+    </section>
+    <section id="polaroid-arts" class="menu-section">
+      <h2>Polaroid Arts</h2>
+      <div class="menu-items-container" id="polaroid-arts-menu-items"></div>
+    </section>
+    <section id="art-illustrations" class="menu-section">
+      <h2>Art Illustrations</h2>
+      <div class="menu-items-container" id="art-illustrations-menu-items"></div>
+    </section>
+    <section id="greeting-cards" class="menu-section">
+      <h2>Greeting Cards</h2>
+      <div class="menu-items-container" id="greeting-cards-menu-items"></div>
+    </section>
+  </main>
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Your Bag</h2>
+      <div id="cart-items"></div>
+      <div id="total-price">Total: ₹0.00</div>
+      <button id="checkout-modal-btn">Checkout</button>
+    </div>
+  </div>
+  <script src="/JS/order.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+body {
+    background-image: url('../Img/brownbg3.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  
+  .welcome-message {
+    color: rgba(118, 92, 83, 0.95); 
+    margin-bottom: 20px; 
+    text-align: center;
+    width:100%;
+    height:10%;
+  }
+  
+  .signup-container {
+    text-align: center;
+    border-radius: 25px;
+    background-color: rgba(118, 92, 83, 0.95);
+    padding: 40px;
+    width:300px;
+    height: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    color: #FFF;
+  }
+  input[type="text"],
+  input[type="password"] {
+    width: 100%; 
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box; 
+  }
+  
+  button {
+    width: calc(100% - 20px); 
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #A67B5B; 
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #8B6B4A;
+  }
+  
+  a {
+    color: #fad4c0;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  } 

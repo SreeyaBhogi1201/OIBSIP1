@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/artsignup.css">
+    <title>Sign Up</title>
+    <!-- <script>
+        function validateForm() {
+            var fname = document.getElementById('fname').value;
+            var lname = document.getElementById('lname').value;
+            var password = document.getElementById('pwd').value;
+            var confirmPassword = document.getElementById('confirmpassword').value;
+
+            var nameRegex = /^[A-Z][a-z]*$/;
+            var passwordRegex = /^[\w@#$%]{8,15}$/;
+
+            if (!nameRegex.test(fname)) {
+                alert('First name should start with a capital letter.');
+                return false;
+            }
+
+            if (!nameRegex.test(lname)) {
+                alert('Last name should start with a capital letter.');
+                return false;
+            }
+
+            if (password !== confirmPassword) {
+                alert('Password and confirm password do not match.');
+                return false;
+            }
+
+            if (!passwordRegex.test(password)) {
+                alert('Password should be 8 to 15 characters long and can contain only letters, digits, and the special symbols @#$%.');
+                return false;
+            }
+
+            return true;
+        }
+    </script> -->
+</head>
+<body>
+    <div class="welcome-message"><h2>Welcome to ArtAesthete!</h2></div>
+    <div class="signup-container">
+        <h1>SignUp Here</h1>
+        <form onsubmit="return validateForm()">
+            <div class="form-group">
+                <label>FIRSTNAME :</label><br>
+                <input type="text" placeholder="Firstname" id="fname" required><br>
+            </div>
+            <div class="form-group">
+                <label>MIDDLE NAME :</label><br>
+                <input type="text" placeholder="Middlename" id="mname"><br>
+            </div>
+            <div class="form-group">
+                <label>LASTNAME :</label><br>
+                <input type="text" placeholder="Lastname" id="lname" required><br>
+            </div>
+            <div class="form-group">
+                <label>PASSWORD :</label><br>
+                <input type="password" placeholder="Password" id="pwd" required><br>
+            </div>
+            <div class="form-group">
+                <label>CONFIRM PASSWORD :</label><br>
+                <input type="password" placeholder="Confirm Password" id="confirmpassword" required><br>
+            </div>
+            <button type="submit">Submit</button><br><br>
+            <p>Already a user? <a href="artlogin.html">Login here</a></p>
+        </form>
+    </div>
+</body>
+</html>

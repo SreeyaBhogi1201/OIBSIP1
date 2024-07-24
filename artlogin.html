@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="CSS/artlogin.css">
+    <title>Login</title>
+    <!-- <script>
+        function validateForm() {
+            var username = document.forms["loginForm"]["username"].value;
+            var password = document.forms["loginForm"]["password"].value;
+
+            if (username == "") {
+                alert("Please enter your username.");
+                return false;
+            }
+
+            if (password == "") {
+                alert("Please enter your password.");
+                return false;
+            }
+
+            return true;
+        }
+    </script> -->
+</head>
+<body>
+    <h2 class="welcome-message">Welcome Back to ArtAesthete!</h2>
+    <div class="login-container">
+        <h1>Login Here</h1>
+        <form name="loginForm" onsubmit="return validateForm()" method="post">
+            <div class="form-group">
+                <label>USERNAME :</label><br>
+                <input type="text" placeholder="Username" name="username" required><br><br>
+            </div>
+            <div class="form-group">
+                <label>PASSWORD :</label><br>
+                <input type="password" placeholder="Password" name="password" required><br><br>
+            </div>
+            <button type="submit">Login</button><br><br>
+            <a href="#">Forgot Password?</a><br>
+            <p>Don't have an account? <a href="artsignup.html">Register here</a></p>
+        </form>
+    </div>
+</body>
+</html>

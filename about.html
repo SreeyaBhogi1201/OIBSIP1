@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="CSS/about.css">
+<title>Art Aesthete</title>
+<script>
+  window.addEventListener('scroll', function() {
+  var navbar = document.querySelector('.navbar');
+  if (window.scrollY > 50) { 
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+});
+</script>
+</head>
+<body>
+
+  <header>
+    <div class="navbar">
+      <div class="logo"><img src="Img/LOGO.png"></div>
+      <div style="color: white;">Art Aesthete</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="artsignup.html">SignUp/Login</a>
+      </div>
+      <div class="search-bar">
+        <input id="searchInput" type="search" placeholder="Search..." oninput="search()">
+      </div>
+      <div class="bag-icon">
+        <img src="/Img/cart.jpeg" alt="Bag Icon">
+        <span class="bag-count">0</span>
+      </div>
+    </div>
+</header>
+
+<div class="hero">
+  <h1 style="padding-top: 70px;">About</h1><br>
+</div>
+
+<div class="grid-gallery">
+    <!-- First set of grid items -->
+    <!-- Repeat this set 11 times -->
+    <div class="grid-item">
+        <img src="Img/LOGO.png" alt="Polaroid Art">
+        <p class="grid-caption">ArtAesthete</p>
+        <p class="grid-caption">[Our Logo]</p>
+    </div>
+    <div class="grid-item">
+        <img src="Img/me.jpg" alt="Greeting Cards">
+        <p class="grid-caption">Sreeya Bhogi</p>
+        <p class="grid-caption">[Our Founder]</p>
+    </div>
+</div>
+<div class="content">
+    <p>Art Aesthete, a beacon of creativity, has been a cornerstone in the art community since 2022. Founded by the visionary Sreeya Bhogi, Art Aesthete is not just a brand—it's a testament to the transformative power of art. We specialize in providing a diverse range of artistic services, transcending boundaries to make every individual's creative vision a reality. Our team of dedicated artists, numbering nine strong, is committed to unlocking the inner shine within you, ensuring that everyone can embrace their unique beauty through the lens of art.</p>
+
+   <p>Whether you're seeking to enhance your personal space with bespoke artwork or looking to collaborate on a creative project, Art Aesthete is your trusted partner. Call or email us today to embark on an artistic journey that celebrates your unique vision. Let us be the brushstroke that adds vibrancy to your creative canvas 
+    Whether you're seeking a unique addition to your art collection or the perfect gift that speaks volumes, Art Aesthete is here to captivate your imagination. Join me on this creative voyage, and let Art Aesthete be the curator of beauty in your life. Thank you for being a part of this artistic adventure—I can't wait for you to discover the magic within our artistry.</p>
+</div>
+
+<footer class="footer">
+    <p>Call or email to Order : 555-555-5555 or <a href="mailto:art.aesthetess@gmail.com ">art.aesthetess@gmail.com </a>  </p>
+  </footer>
+</body>
+</html>

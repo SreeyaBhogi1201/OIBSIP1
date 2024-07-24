@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="CSS/services.css">
+<title>Art Aesthete</title>
+<script>
+    window.addEventListener('scroll', function() {
+    var navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) { 
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+
+      document.addEventListener('DOMContentLoaded', (event) => {
+      document.querySelector('.dropdown').addEventListener('click', function (event) {
+        this.querySelector('.dropdown-content').classList.toggle('show');
+      });
+    });
+
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropdown')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo"><img src="Img/LOGO.png"></div>
+        <div style="color: white;">Art Aesthete</div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="artsignup.html">SignUp/Login</a>
+        </div>
+        <div class="search-bar">
+          <input id="searchInput" type="search" placeholder="Search..." oninput="search()">
+        </div>
+        <div class="bag-icon">
+          <img src="/Img/cart.jpeg" alt="Bag Icon">
+          <span class="bag-count">0</span>
+        </div>
+      </div>
+  </header>
+        <div class="hero">
+            <h1 style="padding-top: 100px;">Services</h1>
+        </div><br><br>
+        <h1 style="text-align: center;color:#7d675b;">List of Services</h1><br>
+        <hr>
+        <div class="content">
+            <p>Your unique vision is a blank canvas waiting to come to life, and at Art Aesthete, we specialize in bringing your artistic dreams to fruition. Experience the beauty of commissioned artwork tailored to your personal style, event requirements, and taste. Our skilled team, known for their meticulous eye for detail, employs high-quality materials to deliver a diverse range of commissioned pieces.
+                <br><br>
+                Commissioning Artwork with Art Aesthete:<br><br>
+                Embark on a personalized creative journey by commissioning artwork with Art Aesthete.</p><br>
+            <img class="img" src="Img/concu1.jpg">
+        </div>
+            <table>
+                <tr><th>Size Specifications </th> <th>L x B inches</th> </tr>  
+                <tr><td>Mini</td>
+                    <td>3x3</td>
+                </tr>
+                <tr><td>Medium</td>
+                    <td>4x4</td>
+                </tr>  
+                <tr><td>Large</td>
+                    <td>5x5</td>
+                </tr>   
+            </table>
+
+        <footer class="footer">
+            <p>Call or email to Order : 555-555-5555 or <a href="mailto:art.aesthetess@gmail.com ">art.aesthetess@gmail.com </a>  </p>
+        </footer>
+  </body>
+  </html>

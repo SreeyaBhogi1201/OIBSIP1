@@ -1,0 +1,145 @@
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content:space-around;
+    align-items: center; 
+    padding: 10px 20px;
+    background-color:transparent;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    transition: background-color 0.3s;
+    z-index: 1000;
+    width: 100%;
+   
+  }
+
+  .logo{
+    display: flex;
+    align-items: center;
+  }
+  .logo img{
+    max-width: 30%;
+    max-height: 60%;
+
+  }
+  .bag-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+.bag-icon img {
+    width: 30px;
+    height: auto;
+}
+
+.bag-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: red;
+  color: #fff;
+  border-radius: 50%;
+  padding: 5px 8px;
+  font-size: 12px;
+}
+
+.bag-icon a {
+  font-size: large;
+  color: #fff;
+  font-weight: bolder;
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+
+  .search-bar input[type="search"] {
+    padding: 5px 10px;
+    border: 1px solid #7d675b;
+    border-radius: 20px;
+    margin-right: 50px;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    margin-left: 10px;
+    color:white;
+    transition: color 0.3s; 
+  }
+
+  .navbar a:hover {
+    color: #666;
+  }
+
+  .navbar.scrolled {
+    background-color: #000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  }
+  .navbar.scrolled .navbar a {
+    color:white;
+  }
+
+  .hero {
+    height:50vh;
+    width:100%;
+    background-image: linear-gradient(rgba(33, 32, 32, 0.75),rgba(83, 79, 79, 0.75)),url('../Img/rakhicard.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #efecef;
+    text-align: center;
+    padding: 50px 20px;
+    position:relative;
+  }
+
+  .content {
+    padding-top: 60px;
+    padding: 50px;
+    color: #7d675b;
+    line-height: 2pc;
+    font-size: medium;
+  }
+
+  .h1{
+    text-align: center;
+  }
+  
+  .img{
+    margin: 1px;
+    padding: 1px;
+    height: 300px;
+    width: 1170px;
+
+  }
+  table,tr,th,td{
+    margin: 50px;
+    border: 1px solid;
+    border-collapse: collapse;
+    color: #7d675b;
+    background-color:rgb(200, 184, 164);
+}
+th{
+    color:#666; 
+}
+footer{
+  background-color: #7d675b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+  color:#efecef;
+  width: 100%;
+  min-height: 30px;
+}
+
+a{
+  color:white;
+}
+
+.footer a:hover{
+  color:#a19a9a;
+}
